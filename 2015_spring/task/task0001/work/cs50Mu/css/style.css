@@ -1,0 +1,261 @@
+/**
+ *  * reset
+ *   * ==============================================
+ *    */
+* {
+    margin: 0;
+    padding: 0;
+/*    font-family: "Microsoft YaHei", "sans-serif";  */
+    font-family: "sans-serif";
+}
+
+body {
+    background-color:#DBD9DB;
+
+}
+
+
+.header {
+    position:relative;
+    width:100%;
+    height:80px;
+    background-color:#542A5A;
+}
+
+.header-content {
+    position:relative;
+    max-width:980px;
+    height:80px;
+    margin: 0 auto;
+//    background-color:green;
+}
+
+.header-bottom {
+    position:absolute;
+    width:100%;
+    height:50px;
+    bottom:5px;
+//    background-color:red;
+}
+
+.logo {
+    position:absolute;
+//    display:inline;
+    bottom:0px;
+    left:0px;
+    font-size:14px;
+    color:white;
+//    margin-bottom:2px;
+//    font:"sans-serif";
+}
+
+.menu {
+    position:absolute;   /* can trigger BFC */
+    right:0px;
+    bottom:0px;
+    color:white;
+    list-style:none;
+}
+
+.menu li {     
+     float:left;   /* li elements are block elements, so they can be floated */
+/*    display:inline-block;     another method to achieve inline list */
+     margin-left:28px;
+     font-size:14px;
+ }
+
+.header .icon-github {
+     position:absolute;
+     right:10px;
+     bottom:0px;
+ }
+
+@media screen and (max-width:980px) {
+ .header .icon-github {
+        display:none;
+    }
+}
+
+.banner-bg {
+    width:100%;
+}
+
+.description-text-wrapper {
+    position:relative;
+    max-width:980px;
+    margin:0 auto;
+}
+
+.description-text {
+    position:absolute;
+    width:300px;
+    right:0;
+    bottom:0;
+    padding:10px 10px 30px 10px;
+//    background-color:white;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.5) 75%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(75%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.5) 75%,rgba(255,255,255,0) 100%); /* W3C */
+}
+
+.description-text h1 {
+    font-size:14px;
+    text-align:right;
+}
+
+.description-text p {
+    margin-top:12px;
+    font-size:12px;
+    line-height:150%;
+}
+
+.main-wrapper {
+    margin-bottom:110px;
+}   
+
+.article-wrapper {
+    position:relative;
+    overflow:hidden;    /* 三列等高 */
+    max-width:980px;
+    margin:10px auto 0;
+//    height:400px;
+}
+
+.post-wrapper {     
+    float:left;
+    width:320px;
+    background-color:#FFFFFF;
+    padding-bottom:5000px;     /* 三列等高 */
+    margin-bottom:-5000px;     /* 三列等高 */
+}
+
+#middle {
+/*    margin:0 10px; */
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.post-wrapper img {
+    margin:10px 10px 0px;
+}
+
+.post-wrapper p {
+    font-size:12px;
+    line-height:170%;
+    padding:15px 30px 25px;  /* three values: apply first to top, second to left and right, third to bottom */
+}
+
+.about-me {
+    width:100%;
+    height:520px;
+    background-color:#FFFFFF;
+    color:black;
+}
+
+.about-me img {
+    position:relative;
+    top:-50px;
+    display:block;
+    border-radius:50%;
+    margin:0 auto 50px; 
+}
+
+.about-me h1 {
+    font:20px "Century Gothic";
+    text-align:center;
+}
+
+.about-me p {
+    margin: 40px auto 0;
+    font-size:14px;
+    width:600px;
+    line-height:170%;
+}
+
+.footer {
+    background-color:#000000;
+    width:100%;
+    position:relative;
+    height:395px;
+    font-size:12px;
+}
+
+.menu-wrapper {
+    width:100%;
+    height:35px;
+    border-bottom:#333333 solid 1px;
+}
+
+.footer-menu { 
+    margin:0 auto;
+    width:220px;
+}
+
+
+.footer-menu li {
+    float:left;
+    margin-left:23px;
+    list-style:none;
+    color:white;
+    padding: 10px 0;
+}
+
+.footer-links {
+    margin:40px auto 0;
+    width:1000px;
+    color:white;
+    overflow:hidden;
+}
+
+.footer-links ul {
+    float:left;
+    width:200px;
+}
+
+/*ul .links-title {
+  color:#cccccc;
+  margin-bottom:30px;
+ } 
+ */
+ 
+.footer-links li {
+    list-style:none;
+    margin-bottom:12px;
+}
+
+.footer-links li:nth-child(1) {    /* or use li:first-child */
+  color:#cccccc;
+  margin-bottom:30px;
+}
+
+.footer-copyright {
+    width:500px;
+    margin:90px auto 0;
+    color:white;
+    position:relative;
+}
+
+.footer-copyright p {
+    text-align: center;
+    margin-bottom:20px;
+}
+
+/*.footer-copyright img {
+    position:absolute;
+    left:235px;
+}
+*/
+.footer-copyright img {
+    display:block;
+    margin:0 auto;
+}
+
+/* .clearfix:after {
+     content: "\200B";
+     display: block;
+     height: 0;
+     clear: both;
+ } */
